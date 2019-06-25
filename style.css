@@ -1,0 +1,16 @@
+/* .top-header{
+  min-height: 5.9375rem;
+  background-color: #4D5050;
+}
+.container-header{
+  margin: 0 auto;
+  background-color:darkgrey;
+  height:4.5rem;
+} */
+.main{
+  background-color: #4D5050;
+  display:flex;
+  min-height:30rem;
+  margin-top:1rem;
+}
+
