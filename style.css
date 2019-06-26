@@ -1,9 +1,14 @@
+/* style.css */
+
 :root {
-  --main-bg: lightblue;
-  --dark-bg: rgb(56, 56, 56);
-  --medium-bg: rgb(169, 169, 169);
+  --body-bg: rgb(230, 230, 230);
+  --base-item-bg: rgb(200, 200, 200);
   --light-bg: rgb(211, 211, 211);
+  --medium-bg: rgb(169, 169, 169);
+  --dark-bg: rgb(56, 56, 56);
 }
+
+/* ******************** basic styling */
 
 html {
   font-size: 10px;
@@ -11,145 +16,97 @@ html {
 
 body {
   font-size: 2rem;
-  color: #fff;
+  color: rgb(255, 255, 255);
+  background-color: var(--body-bg);
 }
 
-.top-header {
-  background-color: var(--dark-bg);
-  display: flex;
-  height: 5.9rem;
-  border: 3px solid orange;
-}
+/* ******************** flex grid system */
 
-.main {
-  background-color: var(--main-bg);
-}
-
-.sub-header {
-  height: 5.9rem;
-}
-
-.featured-articles {
+.container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  height: 80rem;
-  border: 3px solid red;
 }
 
-.featured-articles article {
+.container > * {
   flex-grow: 1;
-  flex-basis: 40%;
-  background-color: var(--medium-bg);
-  border: 1px solid red;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 0.3rem;
 }
 
-.subscription-promo {
-  height: 30rem;
-  border: 3px solid yellow;
+.one-third,
+.one-half,
+.two-thirds,
+.one-whole {
+  background-color: var(--base-item-bg);
 }
 
-/* complete */
-
-.below-main {
-  background-color: darkslategrey;
-  height: 12rem;
-  margin: 0.5rem;
+.one-third {
+  flex-basis: 30%;
 }
 
-.publications {
-  display: flex;
-  flex-direction: row;
-  min-height: 18rem;
-  background-color: gray;
+.one-half {
+  flex-basis: 47%;
 }
 
-.article {
-  background-color: darkslategray;
-  width: 33.3%;
-  height: 12rem;
-  margin: 1rem;
+.two-thirds {
+  flex-basis: 60%;
 }
 
-.friends-supporters {
-  background-color: gray;
-  height: 40rem;
-  display: flex;
-  flex-direction: row;
-}
-.friends {
-  background-color: darkslategray;
-  height: 38.5rem;
-  width: 30%;
-  margin: 1rem;
-}
-.supporters {
-  background-color: darkslategray;
-  height: 38.5rem;
-  width: 70%;
-  margin: 1rem;
+.one-whole {
+  flex-basis: 100%;
 }
 
-.article-section {
-  display: flex;
-  flex-direction: column;
-  background-color: gray;
-  height: 13rem;
+/* ****************************** sections */
+
+/* headers */
+
+.header, .sub-header {
+  height: 17rem;
 }
-.latest-articles {
-  display: flex;
-  flex-direction: column;
-  background-color: darkslategray;
-  height: 10rem;
-  margin: 1rem;
+
+/* posts */
+
+.featured-posts article {
+  height: 56rem;
 }
-.upcoming-section {
-  display: flex;
-  flex-direction: column;
-  background-color: gray;
-  height: 40rem;
+
+.latest-posts article {
+  height: 70rem;
 }
-.upcoming {
-  display: flex;
-  flex-direction: column;
-  background-color: darkslategray;
+
+.community-links article{
+  height: 45rem;
+}
+
+.curated-posts article {
+  height: 75rem;
+}
+
+.see-more {
+  height: 23rem;
+}
+
+/* promos */
+
+.membership-promo {
+  height: 50rem;
+}
+
+.conference-promo {
+  height: 104rem;
+}
+
+.promo-book {
+  height: 44rem;
+}
+
+.person-of-the-week {
   height: 38rem;
-  margin: 1rem;
 }
-.publications-2 {
-  min-height: 18rem;
-  background-color: gray;
-}
-.article-2 {
-  background-color: darkslategray;
-  display: inline-block;
-  width: 40.5%;
-  height: 15rem;
-  margin: 0.5rem;
-}
-.design {
-  display: flex;
-  flex-direction: column;
-  background-color: gray;
-  height: 20rem;
-}
-.design-system {
-  display: flex;
-  flex-direction: column;
-  background-color: darkslategray;
-  height: 18rem;
-  margin: 1rem;
-}
-.guides {
-  display: flex;
-  flex-direction: row;
-  min-height: 40rem;
-  background-color: gray;
-}
-.g-articles {
-  background-color: darkslategray;
-  width: 33.3%;
-  height: 38rem;
-  margin: 1rem;
+
+/* footer */
+
+.footer {
+  height: 52rem;
 }
