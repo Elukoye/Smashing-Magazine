@@ -1,124 +1,151 @@
-.top-header{
+:root {
+  --main-bg: palegreen;
+  --dark-bg: rgb(56, 56, 56);
+  --medium-bg: rgb(169, 169, 169);
+  --light-bg: rgb(211, 211, 211);
+  --test-bg: lightblue;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 40px;
+  color: #fff;
+}
+
+.top-header {
+  background-color: var(--dark-bg);
+  display: flex;
+  height: 5.9rem;
+  border: 3px solid orange;
+}
+
+.main {
+  background-color: var(--main-bg);
+}
+
+.sub-header {
+  height: 5.9rem;
+}
+
+.featured-articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  height: 80rem;
+  border: 3px solid red;
+}
+
+.featured-articles article {
+  flex-grow: 1;
+  flex-basis: 40%;
+  background-color: var(--medium-bg);
+  border: 1px solid red;
+}
+
+/* complete */
+
+.below-main {
   background-color: darkslategrey;
-  display:flex;
-  flex-direction:row;
-  height:5.9rem;
+  height: 12rem;
+  margin: 0.5rem;
 }
-.main{
-  background-color: gray;
-   margin:0 auto;
-   height:50rem;
-  
-}
-.column{
-  display: inline-block;
-  width: 33.3%;
-  height: 18.5rem;
-  margin: 0.1rem; 
-  vertical-align: top;
-  background-color: darkslategrey;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;  
-}
-.below-main{
-  background-color: darkslategrey;
-  height:12rem;
-  margin:0.5rem;
-}
-.publications{
-  display:flex;
-  flex-direction:row;
-  min-height:18rem;
-  background-color:gray;
-}
-.article{
-  background-color: darkslategray;
-  width:33.3%;
-  height:12rem;
-  margin:1rem;
-}
-.friends-supporters{
-  background-color:gray;
-  height:40rem;
-  display:flex;
+
+.publications {
+  display: flex;
   flex-direction: row;
-  
-
-}
-.friends{
-  background-color:darkslategray;
-  height:38.5rem;
-  width:30%;
-  margin:1rem; 
-  
-}
-.supporters{
-  background-color:darkslategray;
-  height:38.5rem;
-  width:70%;
-  margin:1rem; 
+  min-height: 18rem;
+  background-color: gray;
 }
 
-.article-section{
-  display:flex;
+.article {
+  background-color: darkslategray;
+  width: 33.3%;
+  height: 12rem;
+  margin: 1rem;
+}
+
+.friends-supporters {
+  background-color: gray;
+  height: 40rem;
+  display: flex;
+  flex-direction: row;
+}
+.friends {
+  background-color: darkslategray;
+  height: 38.5rem;
+  width: 30%;
+  margin: 1rem;
+}
+.supporters {
+  background-color: darkslategray;
+  height: 38.5rem;
+  width: 70%;
+  margin: 1rem;
+}
+
+.article-section {
+  display: flex;
   flex-direction: column;
-  background-color:gray;
-  height:13rem;
+  background-color: gray;
+  height: 13rem;
 }
-.latest-articles{
-  display:flex;
+.latest-articles {
+  display: flex;
   flex-direction: column;
   background-color: darkslategray;
   height: 10rem;
-  margin:1rem;
+  margin: 1rem;
 }
-.upcoming-section{
-  display:flex;
+.upcoming-section {
+  display: flex;
   flex-direction: column;
-  background-color:gray;
-  height:40rem;
+  background-color: gray;
+  height: 40rem;
 }
-.upcoming{
-  display:flex;
+.upcoming {
+  display: flex;
   flex-direction: column;
   background-color: darkslategray;
   height: 38rem;
-  margin:1rem;
+  margin: 1rem;
 }
-.publications-2{
-  min-height:18rem;
-  background-color:gray;
- 
+.publications-2 {
+  min-height: 18rem;
+  background-color: gray;
 }
-.article-2{
+.article-2 {
   background-color: darkslategray;
-  display:inline-block;
-  width:40.5%;
-  height:15rem;
-  margin:0.5rem;
+  display: inline-block;
+  width: 40.5%;
+  height: 15rem;
+  margin: 0.5rem;
 }
-.design{
-  display:flex;
+.design {
+  display: flex;
   flex-direction: column;
-  background-color:gray;
-  height:20rem;
+  background-color: gray;
+  height: 20rem;
 }
-.design-system{
-  display:flex;
+.design-system {
+  display: flex;
   flex-direction: column;
   background-color: darkslategray;
   height: 18rem;
-  margin:1rem;
+  margin: 1rem;
 }
-.guides{
-  display:flex;
-  flex-direction:row;
-  min-height:40rem;
-  background-color:gray;
+.guides {
+  display: flex;
+  flex-direction: row;
+  min-height: 40rem;
+  background-color: gray;
 }
-.g-articles{
+.g-articles {
   background-color: darkslategray;
-  width:33.3%;
-  height:38rem;
-  margin:1rem;
+  width: 33.3%;
+  height: 38rem;
+  margin: 1rem;
 }
