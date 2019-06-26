@@ -1,9 +1,8 @@
 :root {
-  --main-bg: palegreen;
+  --main-bg: lightblue;
   --dark-bg: rgb(56, 56, 56);
   --medium-bg: rgb(169, 169, 169);
   --light-bg: rgb(211, 211, 211);
-  --test-bg: lightblue;
 }
 
 html {
@@ -11,7 +10,7 @@ html {
 }
 
 body {
-  font-size: 40px;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -44,6 +43,11 @@ body {
   flex-basis: 40%;
   background-color: var(--medium-bg);
   border: 1px solid red;
+}
+
+.subscription-promo {
+  height: 30rem;
+  border: 3px solid yellow;
 }
 
 /* complete */
