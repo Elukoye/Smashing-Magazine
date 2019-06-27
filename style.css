@@ -3,9 +3,12 @@
 :root {
   --body-bg: rgb(230, 230, 230);
   --base-item-bg: rgb(200, 200, 200);
-  --light-bg: rgb(211, 211, 211);
-  --medium-bg: rgb(169, 169, 169);
-  --dark-bg: rgb(56, 56, 56);
+
+  --vh-5-bg: rgb(210, 210, 210);
+  --vh-4-bg: rgb(150, 150, 150);
+  --vh-3-bg: rgb(110, 110, 110);
+  --vh-2-bg: rgb(70, 70, 70);
+  --vh-1-bg: rgb(30, 30, 30);
 }
 
 /* ******************** basic styling */
@@ -61,7 +64,8 @@ body {
 
 /* headers */
 
-.header, .sub-header {
+.header,
+.sub-header {
   height: 17rem;
 }
 
@@ -75,7 +79,7 @@ body {
   height: 70rem;
 }
 
-.community-links article{
+.community-links article {
   height: 45rem;
 }
 
@@ -109,4 +113,26 @@ body {
 
 .footer {
   height: 52rem;
+}
+
+/* ******************** visual hierarchy */
+
+.vh-1 {
+  background-color: var(--vh-1-bg);
+}
+
+.vh-2 {
+  background-color: var(--vh-2-bg);
+}
+
+.vh-3 {
+  background-color: var(--vh-3-bg);
+}
+
+.vh-4 {
+  background-color: var(--vh-4-bg);
+}
+
+.vh-5 {
+  background-color: var(--vh-5-bg);
 }
