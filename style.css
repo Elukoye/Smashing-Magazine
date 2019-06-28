@@ -137,6 +137,14 @@ header img {
   max-width: 80%;
 }
 
+.featured-posts article img {
+  height: 8rem;
+  border: 0.5rem solid #fff;
+  border-radius: 1rem;
+  transform: rotate(-10deg);
+  margin-bottom: 3rem;
+}
+
 .latest-posts article {
   height: 70rem;
 }
